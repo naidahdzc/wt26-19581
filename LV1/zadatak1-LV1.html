@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="bs">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Restoran Vidikovac - Konjic</title>
+    </head>
+    <body>
+        <header>
+            <h1>Restoran Vidikovac - Konjic</h1>
+            <p>Uzivajte u hrani i prelijepom pogledu</p>
+        </header>
+        <section>
+            <h1>O našem restoranu</h1>
+            <p>
+                Restoran Vidikovac nalazi se u Konjicu i predstavlja ugodno
+                mjesto za druženje s porodicom i prijateljima. Gosti mogu
+                uživati u ukusnoj hrani i prijatnoj atmosferi.
+            </p>
+            <p>
+                Ako planirate ručak, večeru ili posebno porodično okupljanje,
+                možete unaprijed rezervisati svoj sto pomoću forme na ovoj
+                stranici.
+            </p>
+            <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+                alt="Slika unutrašnjosti restorana"
+                width="600"
+            />
+        </section>
+
+        <section>
+          <h1>Naš jelovnik</h1>
+              <ul>
+                  <li>Ćevapi i tradicionalna jela</li>
+                  <li>Različite vrste pizza</li>
+                  <li>Jela od piletine</li>
+                  <li>Salate i prilozi</li>
+                  <li>Deserti i kolači</li>
+                  <li>Sokovi i topli napitci</li>
+              </ul>
+              <p>Za više informacija o Konjicu možete posjetiti <a href="https://www.konjic.ba/">zvaničnu stranicu grada Konjica</a>.<p>
+        </section>
+
+        <hr />
+
+        <section>
+          <h2>Rezerviši svoj sto</h2>
+          <p>Popunite formu ispod i odaberite podatke za željenu rezervaciju</p>
+         
+          <form>
+            <label for="imeiprezime">Ime i prezime</label><br/>
+            <input type="text" id="imeiprezime" name="imeiprezime" required>
+            <br></br>
+
+            <label for="telefon">Broj telefona</label><br>
+            <input type="number" id="telefon" name="telefon" required>
+            <br></br>
+
+            <label for="datum">Datum reyervacije</label><br/>
+            <input type="date" id="datum" name="datum" required>
+            <br></br>
+          
+
+            <label for="vrijeme">Vrijeme rezervacije:</label><br/>
+                  <select id="vrijeme" name="vrijeme">
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                  </select>
+                  <br></br>
+            <p>Za koliko osoba rezervišete sto?</p>
+
+            <input type="radio" id="jedna-dvije" name="osobe" value="1-2" required/>
+            <label for="jedna-dvije">1-2 osobe</label>
+            <br/>
+            
+            <input type="radio" id="tri-četiri" name="osobe" value="3-4" required/>
+            <label for="tri-cetiri">3-4 osobe</label>
+            <br/>
+
+            <input type="radio" name="osoba" id="pet-više" value="5 ili više" required/>
+            <label type="pet-više">5 ili više</label>
+           <br> <br/>
+            
+           <p>Posebni zahtjevi:</p>
+
+           <input type="checkbox" id="terasa" name="zahtjevi" value="terasa"/>
+           <label type="terasa">Želimo sto na terasi</label>
+           <br/>
+
+           <input type="checkbox" id="rođendan" name="zahtjevi" value="rođendan"/>
+           <label type="rođendan">Proslava rođendana</label>
+           <br/>
+
+           <input type="checkbox" id="djeca" name="zahtjevi" value="djeca"/>
+           <label type="djeca">Dolazak s djecom</label>
+           <br></br>
+
+           <label for="napomena">Dodatna napomena</label><br/>
+           <textarea id="napomena" name="napomena" rows="4" cols="40"></textarea>
+            
+           <br/>
+           <button type="button">Rezerviši sto</button>
+
+
+           </form>
+        </section>
+
+        <hr/>
+
+        <footer>
+          <h2>Kontakt i lokacija</h2>
+          
+          <p><strong>Restoran:</strong> Vidikovac</p>
+          <p><strong>Grad:</strong> Konjic</p>
+          <p><strong>Adresa:</strong> Musala bb, Konjic</p>
+
+          <p>Radujemo se vašoj posjeti!</p>
+        </footer>
+    </body>
+</html>

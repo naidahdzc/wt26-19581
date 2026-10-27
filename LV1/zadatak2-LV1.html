@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="bs">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Restoran Vidikovac-narudžba hrane</title>
+    </head>
+    <body>
+           <h1>Narudžba hrane - Restoran Vidikovac</h1>
+
+      <p>Dobro došli u online formu za naručivanje hrane iz restorana Vidikovac Konjic. Odaberite željeno jelo, veličinu porcije i dodatke kako biste sastavili svoju narudžbu.</p>
+
+      <form>
+        <label for="ime">Ime i prezime</label><br/>
+        <input type="text" id="ime" name="ime" required>
+        <br></br>
+
+        <label for="broj">Broj telefona:</label><br/>
+        <input type="number" id="broj" name="broj" required>
+        <br></br>
+
+        <label for="jelo">Odaberite jelo:</label><br/>
+        <select id="jelo" name="jelo">
+          <option value="pizza">Pizza Margherita</option>
+          <option value="pasta">Pasta Polo</option>
+          <option value="burger">Burger</option>
+          <option value="piletina">Grilovana piletina</option>
+        </select>
+        <br></br>
+
+        <p>Koju veličinu porcije želite?</p>
+
+        <input type="radio" id="mala" name="porcija" value="mala" required/>
+        <label for="mala">Mala</label>
+
+        <input type="radio" id="srednja" name="porcija" value="srednja" required/>
+        <label for="srednja">Srednja</label>
+
+        <input type="radio" id="velika" name="porcija" valude="velika" required/>
+        <label for="velika">Velika</label>
+        <br></br>
+
+        <p>Odaberite dodatke uz jelo:</p>
+
+        <input type="checkbox" id="sir" name="dodatak" value="sir"/>
+        <label for="sir">Dodatni sir</label>
+        
+        <input type="checkbox" id="sos" name="dodatak" value="sos" />
+        <label for="sos">Bijeli sos</label>
+
+        <input type="checkbox" id="pomfrit" name="dodatak" value="pomfrit"/>
+        <label for="pomfrit">Pomfrit</label>
+
+        <input type="checkbox" id="salata" name="dodatak" value="salata"/>
+        <label for="salata">Salata</label>
+        <br></br>
+
+        <label for="preuzimanje">Način preuzimanja:</label><br/>
+        <select name="preuzimanje" id="preuzimanje">
+          <option value="lično">Lično preuzimanje u restoranu</option>
+          <option value="dostava">Dostava na adresu</option>
+        </select>
+
+        <br></br>
+        <label for="napomena">Dodatne napomene</label><br/>
+        <input type="text" id="napomena" name="napomena"/>
+        <br></br>
+    
+        <button type="button">Pošalji narudžbu</button>
+      </form>
+    </body>
+</html>
